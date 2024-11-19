@@ -1,0 +1,688 @@
+Script started on 2024-11-19 13:43:48+03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="270" LINES="63"]
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> vagrant u[[Kp
+[0mBringing machine 'Debian12-LogServer' up with 'libvirt' provider...[0m
+[0mBringing machine 'Debian12-WebServer' up with 'libvirt' provider...[0m
+[0mBringing machine 'Debian12-AppServer' up with 'libvirt' provider...[0m
+[1;33m==> Debian12-LogServer: You assigned a static IP ending in ".1" to this machine.
+==> Debian12-LogServer: This is very often used by the router and can cause the
+==> Debian12-LogServer: network to not work properly. If the network doesn't work
+==> Debian12-LogServer: properly, try changing this IP.[0m
+[1;33m==> Debian12-WebServer: No version detected for /home/max/vagrant/images/debian12, using timestamp to watch for modifications. Consider
+==> Debian12-WebServer: generating a local metadata for the box with a version to allow better handling.
+==> Debian12-WebServer: See https://www.vagrantup.com/docs/boxes/format#box-metadata for further details.[0m
+[1;33m==> Debian12-LogServer: No version detected for /home/max/vagrant/images/debian12, using timestamp to watch for modifications. Consider
+==> Debian12-LogServer: generating a local metadata for the box with a version to allow better handling.
+==> Debian12-LogServer: See https://www.vagrantup.com/docs/boxes/format#box-metadata for further details.[0m
+[1;33m==> Debian12-AppServer: No version detected for /home/max/vagrant/images/debian12, using timestamp to watch for modifications. Consider
+==> Debian12-AppServer: generating a local metadata for the box with a version to allow better handling.
+==> Debian12-AppServer: See https://www.vagrantup.com/docs/boxes/format#box-metadata for further details.[0m
+[1m==> Debian12-WebServer: Creating image (snapshot of base box volume).[0m
+[1m==> Debian12-LogServer: Creating image (snapshot of base box volume).[0m
+[1m==> Debian12-AppServer: Creating image (snapshot of base box volume).[0m
+[1m==> Debian12-LogServer: Creating domain with the following settings...[0m
+[1m==> Debian12-WebServer: Creating domain with the following settings...[0m
+[1m==> Debian12-LogServer:  -- Name:              vg3_Debian12-LogServer[0m
+[1m==> Debian12-AppServer: Creating domain with the following settings...[0m
+[1m==> Debian12-LogServer:  -- Title:             Debian12-inetRouter[0m
+[1m==> Debian12-WebServer:  -- Name:              vg3_Debian12-WebServer[0m
+[1m==> Debian12-AppServer:  -- Name:              vg3_Debian12-AppServer[0m
+[1m==> Debian12-AppServer:  -- Title:             Debian12-AppServer[0m
+[1m==> Debian12-WebServer:  -- Title:             Debian12-WebServer[0m
+[1m==> Debian12-LogServer:  -- Description:       Виртуальная машина на базе дистрибутива Debian Linux. LogServer[0m
+[1m==> Debian12-AppServer:  -- Description:       Виртуальная машина на базе дистрибутива Debian Linux. AppServer[0m
+[1m==> Debian12-WebServer:  -- Description:       Виртуальная машина на базе дистрибутива Debian Linux. WebServer[0m
+[1m==> Debian12-LogServer:  -- Domain type:       kvm[0m
+[1m==> Debian12-AppServer:  -- Domain type:       kvm[0m
+[1m==> Debian12-WebServer:  -- Domain type:       kvm[0m
+[1m==> Debian12-LogServer:  -- Cpus:              1[0m
+[1m==> Debian12-AppServer:  -- Cpus:              1[0m
+[1m==> Debian12-LogServer:  -- Feature:           acpi[0m
+[1m==> Debian12-WebServer:  -- Cpus:              1[0m
+[1m==> Debian12-AppServer:  -- Feature:           acpi[0m
+[1m==> Debian12-AppServer:  -- Feature:           apic[0m
+[1m==> Debian12-LogServer:  -- Feature:           apic[0m
+[1m==> Debian12-WebServer:  -- Feature:           acpi[0m
+[1m==> Debian12-LogServer:  -- Feature:           pae[0m
+[1m==> Debian12-AppServer:  -- Feature:           pae[0m
+[1m==> Debian12-WebServer:  -- Feature:           apic[0m
+[1m==> Debian12-LogServer:  -- Clock offset:      utc[0m
+[1m==> Debian12-WebServer:  -- Feature:           pae[0m
+[1m==> Debian12-WebServer:  -- Clock offset:      utc[0m
+[1m==> Debian12-AppServer:  -- Clock offset:      utc[0m
+[1m==> Debian12-LogServer:  -- Memory:            1024M[0m
+[1m==> Debian12-WebServer:  -- Memory:            1024M[0m
+[1m==> Debian12-AppServer:  -- Memory:            1024M[0m
+[1m==> Debian12-LogServer:  -- Management MAC:    52:54:00:27:28:83[0m
+[1m==> Debian12-WebServer:  -- Management MAC:    52:54:00:27:28:84[0m
+[1m==> Debian12-AppServer:  -- Management MAC:    52:54:00:27:28:85[0m
+[1m==> Debian12-AppServer:  -- Loader:            [0m
+[1m==> Debian12-LogServer:  -- Loader:            [0m
+[1m==> Debian12-WebServer:  -- Loader:            [0m
+[1m==> Debian12-AppServer:  -- Nvram:             [0m
+[1m==> Debian12-LogServer:  -- Nvram:             [0m
+[1m==> Debian12-WebServer:  -- Nvram:             [0m
+[1m==> Debian12-WebServer:  -- Base box:          /home/max/vagrant/images/debian12[0m
+[1m==> Debian12-WebServer:  -- Storage pool:      default[0m
+[1m==> Debian12-AppServer:  -- Base box:          /home/max/vagrant/images/debian12[0m
+[1m==> Debian12-LogServer:  -- Base box:          /home/max/vagrant/images/debian12[0m
+[1m==> Debian12-LogServer:  -- Storage pool:      default[0m
+[1m==> Debian12-LogServer:  -- Image(vda):        /home/max/libvirt/images/default/vg3_Debian12-LogServer.img, virtio, 40G[0m
+[1m==> Debian12-WebServer:  -- Image(vda):        /home/max/libvirt/images/default/vg3_Debian12-WebServer.img, virtio, 40G[0m
+[1m==> Debian12-WebServer:  -- Disk driver opts:  cache='default'[0m
+[1m==> Debian12-AppServer:  -- Storage pool:      default[0m
+[1m==> Debian12-WebServer:  -- Kernel:            [0m
+[1m==> Debian12-AppServer:  -- Image(vda):        /home/max/libvirt/images/default/vg3_Debian12-AppServer.img, virtio, 40G[0m
+[1m==> Debian12-AppServer:  -- Disk driver opts:  cache='default'[0m
+[1m==> Debian12-WebServer:  -- Initrd:            [0m
+[1m==> Debian12-LogServer:  -- Disk driver opts:  cache='default'[0m
+[1m==> Debian12-LogServer:  -- Kernel:            [0m
+[1m==> Debian12-WebServer:  -- Graphics Type:     vnc[0m
+[1m==> Debian12-AppServer:  -- Kernel:            [0m
+[1m==> Debian12-LogServer:  -- Initrd:            [0m
+[1m==> Debian12-LogServer:  -- Graphics Type:     vnc[0m
+[1m==> Debian12-WebServer:  -- Graphics Port:     -1[0m
+[1m==> Debian12-AppServer:  -- Initrd:            [0m
+[1m==> Debian12-LogServer:  -- Graphics Port:     -1[0m
+[1m==> Debian12-AppServer:  -- Graphics Type:     vnc[0m
+[1m==> Debian12-LogServer:  -- Graphics IP:       127.0.0.1[0m
+[1m==> Debian12-AppServer:  -- Graphics Port:     -1[0m
+[1m==> Debian12-LogServer:  -- Graphics Password: Not defined[0m
+[1m==> Debian12-AppServer:  -- Graphics IP:       127.0.0.1[0m
+[1m==> Debian12-WebServer:  -- Graphics IP:       127.0.0.1[0m
+[1m==> Debian12-LogServer:  -- Video Type:        cirrus[0m
+[1m==> Debian12-AppServer:  -- Graphics Password: Not defined[0m
+[1m==> Debian12-WebServer:  -- Graphics Password: Not defined[0m
+[1m==> Debian12-LogServer:  -- Video VRAM:        16384[0m
+[1m==> Debian12-WebServer:  -- Video Type:        cirrus[0m
+[1m==> Debian12-AppServer:  -- Video Type:        cirrus[0m
+[1m==> Debian12-LogServer:  -- Video 3D accel:    false[0m
+[1m==> Debian12-WebServer:  -- Video VRAM:        16384[0m
+[1m==> Debian12-WebServer:  -- Video 3D accel:    false[0m
+[1m==> Debian12-WebServer:  -- Sound Type:        [0m
+[1m==> Debian12-LogServer:  -- Sound Type:        [0m
+[1m==> Debian12-AppServer:  -- Video VRAM:        16384[0m
+[1m==> Debian12-LogServer:  -- Keymap:            en-us[0m
+[1m==> Debian12-WebServer:  -- Keymap:            en-us[0m
+[1m==> Debian12-AppServer:  -- Video 3D accel:    false[0m
+[1m==> Debian12-AppServer:  -- Sound Type:        [0m
+[1m==> Debian12-WebServer:  -- TPM Backend:       passthrough[0m
+[1m==> Debian12-WebServer:  -- TPM Path:          [0m
+[1m==> Debian12-LogServer:  -- TPM Backend:       passthrough[0m
+[1m==> Debian12-WebServer:  -- INPUT:             type=mouse, bus=ps2[0m
+[1m==> Debian12-AppServer:  -- Keymap:            en-us[0m
+[1m==> Debian12-LogServer:  -- TPM Path:          [0m
+[1m==> Debian12-AppServer:  -- TPM Backend:       passthrough[0m
+[1m==> Debian12-AppServer:  -- TPM Path:          [0m
+[1m==> Debian12-LogServer:  -- INPUT:             type=mouse, bus=ps2[0m
+[1m==> Debian12-AppServer:  -- INPUT:             type=mouse, bus=ps2[0m
+[1;33m==> Debian12-LogServer: You assigned a static IP ending in ".1" to this machine.
+==> Debian12-LogServer: This is very often used by the router and can cause the
+==> Debian12-LogServer: network to not work properly. If the network doesn't work
+==> Debian12-LogServer: properly, try changing this IP.[0m
+[1m==> Debian12-WebServer: Creating shared folders metadata...[0m
+[1m==> Debian12-LogServer: Creating shared folders metadata...[0m
+[1m==> Debian12-WebServer: Starting domain.[0m
+[1m==> Debian12-AppServer: Creating shared folders metadata...[0m
+[1m==> Debian12-LogServer: Starting domain.[0m
+[1m==> Debian12-WebServer: Waiting for domain to get an IP address...[0m
+[1m==> Debian12-AppServer: Starting domain.[0m
+[1m==> Debian12-WebServer: Waiting for machine to boot. This may take a few minutes...[0m
+[1m==> Debian12-LogServer: Waiting for domain to get an IP address...[0m
+[1m==> Debian12-AppServer: Waiting for domain to get an IP address...[0m
+[1m==> Debian12-LogServer: Waiting for machine to boot. This may take a few minutes...[0m
+[1m==> Debian12-AppServer: Waiting for machine to boot. This may take a few minutes...[0m
+[0m    Debian12-WebServer: SSH address: 192.168.121.11:22[0m
+[0m    Debian12-LogServer: SSH address: 192.168.121.10:22[0m
+[0m    Debian12-WebServer: SSH username: vagrant[0m
+[0m    Debian12-AppServer: SSH address: 192.168.121.12:22[0m
+[0m    Debian12-LogServer: SSH username: vagrant[0m
+[0m    Debian12-LogServer: SSH auth method: private key[0m
+[0m    Debian12-WebServer: SSH auth method: private key[0m
+[0m    Debian12-AppServer: SSH username: vagrant[0m
+[0m    Debian12-AppServer: SSH auth method: private key[0m
+[0m    Debian12-WebServer: Warning: Host unreachable. Retrying...[0m
+[0m    Debian12-LogServer: Warning: Host unreachable. Retrying...[0m
+[0m    Debian12-AppServer: Warning: Host unreachable. Retrying...[0m
+[0m    Debian12-WebServer: Warning: Host unreachable. Retrying...[0m
+[0m    Debian12-AppServer: Warning: Host unreachable. Retrying...[0m
+[0m    Debian12-LogServer: Warning: Host unreachable. Retrying...[0m
+[0m    Debian12-WebServer: Warning: Connection refused. Retrying...[0m
+[0m    Debian12-WebServer: 
+    Debian12-WebServer: Vagrant insecure key detected. Vagrant will automatically replace
+    Debian12-WebServer: this with a newly generated keypair for better security.[0m
+[0m    Debian12-WebServer: 
+    Debian12-WebServer: Inserting generated public key within guest...[0m
+[0m    Debian12-WebServer: Removing insecure key from the guest if it's present...[0m
+[0m    Debian12-LogServer: 
+    Debian12-LogServer: Vagrant insecure key detected. Vagrant will automatically replace
+    Debian12-LogServer: this with a newly generated keypair for better security.[0m
+[0m    Debian12-LogServer: 
+    Debian12-LogServer: Inserting generated public key within guest...[0m
+[0m    Debian12-WebServer: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[1m==> Debian12-WebServer: Machine booted and ready![0m
+[0m    Debian12-LogServer: Removing insecure key from the guest if it's present...[0m
+[0m    Debian12-LogServer: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[1m==> Debian12-WebServer: Configuring and enabling network interfaces...[0m
+[1m==> Debian12-LogServer: Machine booted and ready![0m
+[1m==> Debian12-LogServer: Configuring and enabling network interfaces...[0m
+[1m==> Debian12-WebServer: Running provisioner: file...[0m
+[0m    Debian12-WebServer: logs/nginx.conf => ~/nginx.conf[0m
+[1m==> Debian12-WebServer: Running provisioner: shell...[0m
+[0m    Debian12-WebServer: Running: inline script[0m
+[0;32m    Debian12-WebServer: *************************************************************[0m
+[0;32m    Debian12-WebServer: Set Hostname[0m
+[0;32m    Debian12-WebServer: *************************************************************[0m
+[0;32m    Debian12-WebServer: *************************************************************[0m
+[0;32m    Debian12-WebServer: Изменим ttl для работы через раздающий телефон[0m
+[0;32m    Debian12-WebServer: *************************************************************[0m
+[1m==> Debian12-LogServer: Running provisioner: shell...[0m
+[0;32m    Debian12-WebServer: net.ipv4.ip_default_ttl = 66[0m
+[0;32m    Debian12-WebServer: *************************************************************[0m
+[0;32m    Debian12-WebServer: Если ранее не были установлены, то установим необходимые  пакеты[0m
+[0;32m    Debian12-WebServer: *************************************************************[0m
+[0;31m    Debian12-WebServer: [0m
+[0;31m    Debian12-WebServer: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    Debian12-WebServer: [0m
+[0m    Debian12-LogServer: Running: inline script[0m
+[0;32m    Debian12-LogServer: *************************************************************[0m
+[0;32m    Debian12-LogServer: Set Hostname[0m
+[0;32m    Debian12-LogServer: *************************************************************[0m
+[0;32m    Debian12-LogServer: *************************************************************[0m
+[0;32m    Debian12-LogServer: Изменим ttl для работы через раздающий телефон[0m
+[0;32m    Debian12-LogServer: *************************************************************[0m
+[0;32m    Debian12-LogServer: net.ipv4.ip_default_ttl = 66[0m
+[0;32m    Debian12-LogServer: *************************************************************[0m
+[0;32m    Debian12-LogServer: Если ранее не были установлены, то установим необходимые  пакеты[0m
+[0;32m    Debian12-LogServer: *************************************************************[0m
+[0;31m    Debian12-LogServer: [0m
+[0;31m    Debian12-LogServer: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    Debian12-LogServer: [0m
+[0;32m    Debian12-WebServer: Пол:1 http://security.debian.org/debian-security bookworm-security InRelease [48,0 kB][0m
+[0m    Debian12-AppServer: 
+    Debian12-AppServer: Vagrant insecure key detected. Vagrant will automatically replace
+    Debian12-AppServer: this with a newly generated keypair for better security.[0m
+[0;32m    Debian12-LogServer: Пол:1 http://security.debian.org/debian-security bookworm-security InRelease [48,0 kB][0m
+[0;32m    Debian12-WebServer: Пол:2 http://security.debian.org/debian-security bookworm-security/main Sources [125 kB][0m
+[0m    Debian12-AppServer: 
+    Debian12-AppServer: Inserting generated public key within guest...[0m
+[0;32m    Debian12-WebServer: Пол:3 http://ftp.ru.debian.org/debian bookworm InRelease [151 kB][0m
+[0;32m    Debian12-LogServer: Пол:2 http://ftp.ru.debian.org/debian bookworm InRelease [151 kB][0m
+[0m    Debian12-AppServer: Removing insecure key from the guest if it's present...[0m
+[0m    Debian12-AppServer: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[0;32m    Debian12-LogServer: Пол:3 http://security.debian.org/debian-security bookworm-security/main Sources [125 kB][0m
+[1m==> Debian12-AppServer: Machine booted and ready![0m
+[0;32m    Debian12-WebServer: Пол:4 http://ftp.ru.debian.org/debian bookworm-updates InRelease [55,4 kB][0m
+[0;32m    Debian12-LogServer: Пол:4 http://ftp.ru.debian.org/debian bookworm-updates InRelease [55,4 kB][0m
+[0;32m    Debian12-WebServer: Пол:5 http://ftp.ru.debian.org/debian bookworm/main Sources [9 494 kB][0m
+[0;32m    Debian12-WebServer: Пол:6 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [204 kB][0m
+[0;32m    Debian12-LogServer: Пол:5 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [204 kB][0m
+[1m==> Debian12-AppServer: Configuring and enabling network interfaces...[0m
+[0;32m    Debian12-LogServer: Пол:6 http://ftp.ru.debian.org/debian bookworm/non-free-firmware Sources [6 444 B][0m
+[0;32m    Debian12-LogServer: Пол:7 http://ftp.ru.debian.org/debian bookworm/main Sources [9 494 kB][0m
+[1m==> Debian12-AppServer: Running provisioner: file...[0m
+[0m    Debian12-AppServer: logs/nginx.conf => ~/nginx.conf[0m
+[1m==> Debian12-AppServer: Running provisioner: shell...[0m
+[0m    Debian12-AppServer: Running: inline script[0m
+[0;32m    Debian12-AppServer: *************************************************************[0m
+[0;32m    Debian12-AppServer: Set Hostname[0m
+[0;32m    Debian12-AppServer: *************************************************************[0m
+[0;32m    Debian12-AppServer: *************************************************************[0m
+[0;32m    Debian12-AppServer: Изменим ttl для работы через раздающий телефон[0m
+[0;32m    Debian12-AppServer: *************************************************************[0m
+[0;32m    Debian12-AppServer: net.ipv4.ip_default_ttl = 66[0m
+[0;32m    Debian12-AppServer: *************************************************************[0m
+[0;32m    Debian12-AppServer: Если ранее не были установлены, то установим необходимые  пакеты[0m
+[0;32m    Debian12-AppServer: *************************************************************[0m
+[0;31m    Debian12-AppServer: [0m
+[0;31m    Debian12-AppServer: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    Debian12-AppServer: [0m
+[0;32m    Debian12-WebServer: Пол:7 http://security.debian.org/debian-security bookworm-security/main Translation-en [125 kB][0m
+[0;32m    Debian12-AppServer: Пол:1 http://ftp.ru.debian.org/debian bookworm InRelease [151 kB][0m
+[0;32m    Debian12-LogServer: Пол:8 http://security.debian.org/debian-security bookworm-security/main Translation-en [125 kB][0m
+[0;32m    Debian12-AppServer: Пол:2 http://security.debian.org/debian-security bookworm-security InRelease [48,0 kB][0m
+[0;32m    Debian12-AppServer: Пол:3 http://security.debian.org/debian-security bookworm-security/main Sources [125 kB][0m
+[0;32m    Debian12-AppServer: Пол:4 http://ftp.ru.debian.org/debian bookworm-updates InRelease [55,4 kB][0m
+[0;32m    Debian12-AppServer: Пол:5 http://ftp.ru.debian.org/debian bookworm/main Sources [9 494 kB][0m
+[0;32m    Debian12-AppServer: Пол:6 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [204 kB][0m
+[0;32m    Debian12-AppServer: Пол:7 http://security.debian.org/debian-security bookworm-security/main Translation-en [125 kB][0m
+[0;32m    Debian12-LogServer: Пол:9 http://ftp.ru.debian.org/debian bookworm/main amd64 Packages [8 789 kB][0m
+[0;32m    Debian12-AppServer: Пол:8 http://ftp.ru.debian.org/debian bookworm/non-free-firmware Sources [6 444 B][0m
+[0;32m    Debian12-AppServer: Пол:9 http://ftp.ru.debian.org/debian bookworm/main amd64 Packages [8 789 kB][0m
+[0;32m    Debian12-WebServer: Пол:8 http://ftp.ru.debian.org/debian bookworm/non-free-firmware Sources [6 444 B][0m
+[0;32m    Debian12-WebServer: Пол:9 http://ftp.ru.debian.org/debian bookworm/main amd64 Packages [8 789 kB][0m
+[0;32m    Debian12-LogServer: Пол:10 http://ftp.ru.debian.org/debian bookworm/main Translation-en [6 109 kB][0m
+[0;32m    Debian12-AppServer: Пол:10 http://ftp.ru.debian.org/debian bookworm/main Translation-en [6 109 kB][0m
+[0;32m    Debian12-WebServer: Пол:10 http://ftp.ru.debian.org/debian bookworm/main Translation-en [6 109 kB][0m
+[0;32m    Debian12-AppServer: Пол:11 http://ftp.ru.debian.org/debian bookworm/non-free-firmware amd64 Packages [6 236 B][0m
+[0;32m    Debian12-AppServer: Получено 25,1 MB за 3мин 25с (123 kB/s)[0m
+[0;32m    Debian12-AppServer: Чтение списков пакетов…[0m
+[0;32m    Debian12-AppServer: Построение дерева зависимостей…[0m
+[0;32m    Debian12-AppServer: Чтение информации о состоянии…[0m
+[0;32m    Debian12-AppServer: Может быть обновлён 41 пакет. Запустите «apt list --upgradable» для показа.[0m
+[0;31m    Debian12-AppServer: [0m
+[0;31m    Debian12-AppServer: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    Debian12-AppServer: [0m
+[0;32m    Debian12-AppServer: Чтение списков пакетов…[0m
+[0;32m    Debian12-AppServer: Построение дерева зависимостей…[0m
+[0;32m    Debian12-AppServer: Чтение информации о состоянии…[0m
+[0;32m    Debian12-AppServer: Будут установлены следующие дополнительные пакеты:[0m
+[0;32m    Debian12-AppServer:   libestr0 libfastjson4 libip6tc2 liblognorm5 libnetfilter-conntrack3[0m
+[0;32m    Debian12-AppServer:   libnfnetlink0[0m
+[0;32m    Debian12-AppServer: Предлагаемые пакеты:[0m
+[0;32m    Debian12-AppServer:   firewalld rsyslog-mysql | rsyslog-pgsql rsyslog-mongodb rsyslog-doc[0m
+[0;32m    Debian12-AppServer:   rsyslog-openssl | rsyslog-gnutls rsyslog-gssapi rsyslog-relp[0m
+[0;32m    Debian12-AppServer: Следующие НОВЫЕ пакеты будут установлены:[0m
+[0;32m    Debian12-AppServer:   iptables libestr0 libfastjson4 libip6tc2 liblognorm5 libnetfilter-conntrack3[0m
+[0;32m    Debian12-AppServer:   libnfnetlink0 rsyslog[0m
+[0;32m    Debian12-AppServer: Обновлено 0 пакетов, установлено 8 новых пакетов, для удаления отмечено 0 пакетов, и 41 пакетов не обновлено.[0m
+[0;32m    Debian12-AppServer: Необходимо скачать 1 264 kB архивов.[0m
+[0;32m    Debian12-AppServer: После данной операции объём занятого дискового пространства возрастёт на 5 008 kB.[0m
+[0;32m    Debian12-AppServer: Пол:1 http://ftp.ru.debian.org/debian bookworm/main amd64 libip6tc2 amd64 1.8.9-2 [19,4 kB][0m
+[0;32m    Debian12-AppServer: Пол:2 http://ftp.ru.debian.org/debian bookworm/main amd64 libnfnetlink0 amd64 1.0.2-2 [15,1 kB][0m
+[0;32m    Debian12-AppServer: Пол:3 http://ftp.ru.debian.org/debian bookworm/main amd64 libnetfilter-conntrack3 amd64 1.0.9-3 [40,7 kB][0m
+[0;32m    Debian12-AppServer: Пол:4 http://ftp.ru.debian.org/debian bookworm/main amd64 iptables amd64 1.8.9-2 [360 kB][0m
+[0;32m    Debian12-AppServer: Пол:5 http://ftp.ru.debian.org/debian bookworm/main amd64 libestr0 amd64 0.1.11-1 [9 204 B][0m
+[0;32m    Debian12-AppServer: Пол:6 http://ftp.ru.debian.org/debian bookworm/main amd64 libfastjson4 amd64 1.2304.0-1 [28,9 kB][0m
+[0;32m    Debian12-AppServer: Пол:7 http://ftp.ru.debian.org/debian bookworm/main amd64 liblognorm5 amd64 2.0.6-4 [67,2 kB][0m
+[0;32m    Debian12-AppServer: Пол:8 http://ftp.ru.debian.org/debian bookworm/main amd64 rsyslog amd64 8.2302.0-1 [723 kB][0m
+[0;32m    Debian12-AppServer: Получено 1 264 kB за 21с (61,7 kB/s)[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета libip6tc2:amd64.[0m
+[0;32m    Debian12-AppServer: (Чтение базы данных … (Чтение базы данных … 5%(Чтение базы данных … 10%(Чтение базы данных … 15%(Чтение базы данных … 20%(Чтение базы данных … 25%(Чтение базы данных … 30%(Чтение базы данных … 35%(Чтение базы данных … 40%(Чтение базы данных … 45%(Чтение базы данных … 50%(Чтение базы данных … 55%(Чтение базы данных … 60%(Чтение базы данных … 65%(Чтение базы данных … 70%(Чтение базы данных … 75%(Чтение базы данных … 80%(Чтение базы данных … 85%(Чтение базы данных … 90%(Чтение базы данных … 95%(Чтение базы данных … 100%(Чтение базы данных … на данный момент установлено 34810 файлов и каталогов.)[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/0-libip6tc2_1.8.9-2_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается libip6tc2:amd64 (1.8.9-2) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета libnfnetlink0:amd64.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/1-libnfnetlink0_1.0.2-2_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается libnfnetlink0:amd64 (1.0.2-2) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета libnetfilter-conntrack3:amd64.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/2-libnetfilter-conntrack3_1.0.9-3_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается libnetfilter-conntrack3:amd64 (1.0.9-3) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета iptables.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/3-iptables_1.8.9-2_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается iptables (1.8.9-2) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета libestr0:amd64.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/4-libestr0_0.1.11-1_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается libestr0:amd64 (0.1.11-1) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета libfastjson4:amd64.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/5-libfastjson4_1.2304.0-1_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается libfastjson4:amd64 (1.2304.0-1) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета liblognorm5:amd64.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/6-liblognorm5_2.0.6-4_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается liblognorm5:amd64 (2.0.6-4) …[0m
+[0;32m    Debian12-AppServer: Выбор ранее не выбранного пакета rsyslog.[0m
+[0;32m    Debian12-AppServer: Подготовка к распаковке …/7-rsyslog_8.2302.0-1_amd64.deb …[0m
+[0;32m    Debian12-AppServer: Распаковывается rsyslog (8.2302.0-1) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет libip6tc2:amd64 (1.8.9-2) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет libestr0:amd64 (0.1.11-1) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет libfastjson4:amd64 (1.2304.0-1) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет liblognorm5:amd64 (2.0.6-4) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет libnfnetlink0:amd64 (1.0.2-2) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет rsyslog (8.2302.0-1) …[0m
+[0;32m    Debian12-AppServer: Created symlink /etc/systemd/system/syslog.service → /lib/systemd/system/rsyslog.service.[0m
+[0;32m    Debian12-AppServer: Created symlink /etc/systemd/system/multi-user.target.wants/rsyslog.service → /lib/systemd/system/rsyslog.service.[0m
+[0;32m    Debian12-AppServer: Настраивается пакет libnetfilter-conntrack3:amd64 (1.0.9-3) …[0m
+[0;32m    Debian12-AppServer: Настраивается пакет iptables (1.8.9-2) …[0m
+[0;32m    Debian12-AppServer: update-alternatives: используется /usr/sbin/iptables-legacy для предоставления /usr/sbin/iptables (iptables) в автоматическом режиме[0m
+[0;32m    Debian12-AppServer: update-alternatives: используется /usr/sbin/ip6tables-legacy для предоставления /usr/sbin/ip6tables (ip6tables) в автоматическом режиме[0m
+[0;32m    Debian12-AppServer: update-alternatives: используется /usr/sbin/iptables-nft для предоставления /usr/sbin/iptables (iptables) в автоматическом режиме[0m
+[0;32m    Debian12-AppServer: update-alternatives: используется /usr/sbin/ip6tables-nft для предоставления /usr/sbin/ip6tables (ip6tables) в автоматическом режиме[0m
+[0;32m    Debian12-AppServer: update-alternatives: используется /usr/sbin/arptables-nft для предоставления /usr/sbin/arptables (arptables) в автоматическом режиме[0m
+[0;32m    Debian12-AppServer: update-alternatives: используется /usr/sbin/ebtables-nft для предоставления /usr/sbin/ebtables (ebtables) в автоматическом режиме[0m
+[0;32m    Debian12-AppServer: Обрабатываются триггеры для man-db (2.11.2-2) …[0m
+[0;32m    Debian12-AppServer: Обрабатываются триггеры для libc-bin (2.36-9+deb12u8) …[0m
+[0;32m    Debian12-WebServer: Пол:11 http://ftp.ru.debian.org/debian bookworm/non-free-firmware amd64 Packages [6 236 B][0m
+[0;32m    Debian12-LogServer: Пол:11 http://ftp.ru.debian.org/debian bookworm/non-free-firmware amd64 Packages [6 236 B][0m
+[0;32m    Debian12-WebServer: Получено 25,1 MB за 4мин 3с (103 kB/s)[0m
+[0;32m    Debian12-LogServer: Получено 25,1 MB за 4мин 2с (104 kB/s)[0m
+[0;32m    Debian12-WebServer: Чтение списков пакетов…[0m
+[0;32m    Debian12-WebServer: Построение дерева зависимостей…[0m
+[0;32m    Debian12-WebServer: Чтение информации о состоянии…[0m
+[0;32m    Debian12-WebServer: Может быть обновлён 41 пакет. Запустите «apt list --upgradable» для показа.[0m
+[0;31m    Debian12-WebServer: [0m
+[0;31m    Debian12-WebServer: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    Debian12-WebServer: [0m
+[0;32m    Debian12-LogServer: Чтение списков пакетов…[0m
+[0;32m    Debian12-WebServer: Чтение списков пакетов…[0m
+[0;32m    Debian12-LogServer: Построение дерева зависимостей…[0m
+[0;32m    Debian12-LogServer: Чтение информации о состоянии…[0m
+[0;32m    Debian12-LogServer: Может быть обновлён 41 пакет. Запустите «apt list --upgradable» для показа.[0m
+[0;31m    Debian12-LogServer: [0m
+[0;31m    Debian12-LogServer: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    Debian12-LogServer: [0m
+[0;32m    Debian12-WebServer: Построение дерева зависимостей…[0m
+[0;32m    Debian12-WebServer: Чтение информации о состоянии…[0m
+[0;32m    Debian12-LogServer: Чтение списков пакетов…[0m
+[0;32m    Debian12-LogServer: Построение дерева зависимостей…[0m
+[0;32m    Debian12-LogServer: Чтение информации о состоянии…[0m
+[0;32m    Debian12-WebServer: Будут установлены следующие дополнительные пакеты:[0m
+[0;32m    Debian12-WebServer:   libauparse0 libestr0 libfastjson4 libip6tc2 liblognorm5[0m
+[0;32m    Debian12-WebServer:   libnetfilter-conntrack3 libnfnetlink0 nginx-common[0m
+[0;32m    Debian12-WebServer: Предлагаемые пакеты:[0m
+[0;32m    Debian12-WebServer:   firewalld fcgiwrap nginx-doc ssl-cert rsyslog-mysql | rsyslog-pgsql[0m
+[0;32m    Debian12-WebServer:   rsyslog-mongodb rsyslog-doc rsyslog-openssl | rsyslog-gnutls rsyslog-gssapi[0m
+[0;32m    Debian12-WebServer:   rsyslog-relp[0m
+[0;32m    Debian12-WebServer: Следующие НОВЫЕ пакеты будут установлены:[0m
+[0;32m    Debian12-WebServer:   audispd-plugins auditd iptables libauparse0 libestr0 libfastjson4 libip6tc2[0m
+[0;32m    Debian12-WebServer:   liblognorm5 libnetfilter-conntrack3 libnfnetlink0 nginx nginx-common rsyslog[0m
+[0;32m    Debian12-WebServer: Обновлено 0 пакетов, установлено 13 новых пакетов, для удаления отмечено 0 пакетов, и 41 пакетов не обновлено.[0m
+[0;32m    Debian12-WebServer: Необходимо скачать 2 229 kB архивов.[0m
+[0;32m    Debian12-WebServer: После данной операции объём занятого дискового пространства возрастёт на 7 770 kB.[0m
+[0;32m    Debian12-WebServer: Пол:1 http://ftp.ru.debian.org/debian bookworm/main amd64 libauparse0 amd64 1:3.0.9-1 [61,9 kB][0m
+[0;32m    Debian12-LogServer: Будут установлены следующие дополнительные пакеты:[0m
+[0;32m    Debian12-LogServer:   libauparse0 libestr0 libfastjson4 libip6tc2 liblognorm5[0m
+[0;32m    Debian12-LogServer:   libnetfilter-conntrack3 libnfnetlink0 netfilter-persistent[0m
+[0;32m    Debian12-LogServer: Предлагаемые пакеты:[0m
+[0;32m    Debian12-LogServer:   audispd-plugins firewalld rsyslog-mysql | rsyslog-pgsql rsyslog-mongodb[0m
+[0;32m    Debian12-LogServer:   rsyslog-doc rsyslog-openssl | rsyslog-gnutls rsyslog-gssapi rsyslog-relp[0m
+[0;32m    Debian12-LogServer: Следующие НОВЫЕ пакеты будут установлены:[0m
+[0;32m    Debian12-LogServer:   auditd iptables iptables-persistent libauparse0 libestr0 libfastjson4[0m
+[0;32m    Debian12-LogServer:   libip6tc2 liblognorm5 libnetfilter-conntrack3 libnfnetlink0[0m
+[0;32m    Debian12-LogServer:   netfilter-persistent rsyslog[0m
+[0;32m    Debian12-WebServer: Пол:2 http://ftp.ru.debian.org/debian bookworm/main amd64 auditd amd64 1:3.0.9-1 [218 kB][0m
+[0;32m    Debian12-LogServer: Обновлено 0 пакетов, установлено 12 новых пакетов, для удаления отмечено 0 пакетов, и 41 пакетов не обновлено.[0m
+[0;32m    Debian12-LogServer: Необходимо скачать 1 560 kB архивов.[0m
+[0;32m    Debian12-LogServer: После данной операции объём занятого дискового пространства возрастёт на 6 031 kB.[0m
+[0;32m    Debian12-LogServer: Пол:1 http://ftp.ru.debian.org/debian bookworm/main amd64 libauparse0 amd64 1:3.0.9-1 [61,9 kB][0m
+[0;32m    Debian12-WebServer: Пол:3 http://ftp.ru.debian.org/debian bookworm/main amd64 audispd-plugins amd64 1:3.0.9-1 [45,6 kB][0m
+[0;32m    Debian12-WebServer: Пол:4 http://ftp.ru.debian.org/debian bookworm/main amd64 libip6tc2 amd64 1.8.9-2 [19,4 kB][0m
+[0;32m    Debian12-WebServer: Пол:5 http://ftp.ru.debian.org/debian bookworm/main amd64 libnfnetlink0 amd64 1.0.2-2 [15,1 kB][0m
+[0;32m    Debian12-WebServer: Пол:6 http://ftp.ru.debian.org/debian bookworm/main amd64 libnetfilter-conntrack3 amd64 1.0.9-3 [40,7 kB][0m
+[0;32m    Debian12-WebServer: Пол:7 http://ftp.ru.debian.org/debian bookworm/main amd64 iptables amd64 1.8.9-2 [360 kB][0m
+[0;32m    Debian12-LogServer: Пол:2 http://ftp.ru.debian.org/debian bookworm/main amd64 auditd amd64 1:3.0.9-1 [218 kB][0m
+[0;32m    Debian12-LogServer: Пол:3 http://ftp.ru.debian.org/debian bookworm/main amd64 libip6tc2 amd64 1.8.9-2 [19,4 kB][0m
+[0;32m    Debian12-LogServer: Пол:4 http://ftp.ru.debian.org/debian bookworm/main amd64 libnfnetlink0 amd64 1.0.2-2 [15,1 kB][0m
+[0;32m    Debian12-LogServer: Пол:5 http://ftp.ru.debian.org/debian bookworm/main amd64 libnetfilter-conntrack3 amd64 1.0.9-3 [40,7 kB][0m
+[0;32m    Debian12-LogServer: Пол:6 http://ftp.ru.debian.org/debian bookworm/main amd64 iptables amd64 1.8.9-2 [360 kB][0m
+[0;32m    Debian12-WebServer: Пол:8 http://ftp.ru.debian.org/debian bookworm/main amd64 libestr0 amd64 0.1.11-1 [9 204 B][0m
+[0;32m    Debian12-WebServer: Пол:9 http://ftp.ru.debian.org/debian bookworm/main amd64 libfastjson4 amd64 1.2304.0-1 [28,9 kB][0m
+[0;32m    Debian12-WebServer: Пол:10 http://ftp.ru.debian.org/debian bookworm/main amd64 liblognorm5 amd64 2.0.6-4 [67,2 kB][0m
+[0;32m    Debian12-WebServer: Пол:11 http://ftp.ru.debian.org/debian bookworm/main amd64 nginx-common all 1.22.1-9 [112 kB][0m
+[0;32m    Debian12-LogServer: Пол:7 http://ftp.ru.debian.org/debian bookworm/main amd64 netfilter-persistent all 1.0.20 [7 384 B][0m
+[0;32m    Debian12-LogServer: Пол:8 http://ftp.ru.debian.org/debian bookworm/main amd64 iptables-persistent all 1.0.20 [9 000 B][0m
+[0;32m    Debian12-LogServer: Пол:9 http://ftp.ru.debian.org/debian bookworm/main amd64 libestr0 amd64 0.1.11-1 [9 204 B][0m
+[0;32m    Debian12-WebServer: Пол:12 http://ftp.ru.debian.org/debian bookworm/main amd64 nginx amd64 1.22.1-9 [527 kB][0m
+[0;32m    Debian12-LogServer: Пол:10 http://ftp.ru.debian.org/debian bookworm/main amd64 libfastjson4 amd64 1.2304.0-1 [28,9 kB][0m
+[0;32m    Debian12-LogServer: Пол:11 http://ftp.ru.debian.org/debian bookworm/main amd64 liblognorm5 amd64 2.0.6-4 [67,2 kB][0m
+[0;32m    Debian12-LogServer: Пол:12 http://ftp.ru.debian.org/debian bookworm/main amd64 rsyslog amd64 8.2302.0-1 [723 kB][0m
+[0;32m    Debian12-WebServer: Пол:13 http://ftp.ru.debian.org/debian bookworm/main amd64 rsyslog amd64 8.2302.0-1 [723 kB][0m
+[0;32m    Debian12-LogServer: Предварительная настройка пакетов …[0m
+[0;32m    Debian12-LogServer: Получено 1 560 kB за 14с (112 kB/s)[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета libauparse0:amd64.[0m
+[0;32m    Debian12-LogServer: (Чтение базы данных … (Чтение базы данных … 5%(Чтение базы данных … 10%(Чтение базы данных … 15%(Чтение базы данных … 20%(Чтение базы данных … 25%(Чтение базы данных … 30%(Чтение базы данных … 35%(Чтение базы данных … 40%(Чтение базы данных … 45%(Чтение базы данных … 50%(Чтение базы данных … 55%(Чтение базы данных … 60%(Чтение базы данных … 65%(Чтение базы данных … 70%(Чтение базы данных … 75%(Чтение базы данных … 80%(Чтение базы данных … 85%(Чтение базы данных … 90%(Чтение базы данных … 95%(Чтение базы данных … 100%(Чтение базы данных … на данный момент установлено 34810 файлов и каталогов.)[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/0-libauparse0_1%3a3.0.9-1_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается libauparse0:amd64 (1:3.0.9-1) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета auditd.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/1-auditd_1%3a3.0.9-1_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается auditd (1:3.0.9-1) …[0m
+[0;32m    Debian12-WebServer: Предварительная настройка пакетов …[0m
+[0;32m    Debian12-WebServer: Получено 2 229 kB за 15с (151 kB/s)[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета libip6tc2:amd64.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/2-libip6tc2_1.8.9-2_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается libip6tc2:amd64 (1.8.9-2) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета libauparse0:amd64.[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета libnfnetlink0:amd64.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/3-libnfnetlink0_1.0.2-2_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается libnfnetlink0:amd64 (1.0.2-2) …[0m
+[0;32m    Debian12-WebServer: (Чтение базы данных … (Чтение базы данных … 5%(Чтение базы данных … 10%(Чтение базы данных … 15%(Чтение базы данных … 20%(Чтение базы данных … 25%(Чтение базы данных … 30%(Чтение базы данных … 35%(Чтение базы данных … 40%(Чтение базы данных … 45%(Чтение базы данных … 50%(Чтение базы данных … 55%(Чтение базы данных … 60%(Чтение базы данных … 65%(Чтение базы данных … 70%(Чтение базы данных … 75%(Чтение базы данных … 80%(Чтение базы данных … 85%(Чтение базы данных … 90%(Чтение базы данных … 95%(Чтение базы данных … 100%(Чтение базы данных … на данный момент установлено 34810 файлов и каталогов.)[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/00-libauparse0_1%3a3.0.9-1_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается libauparse0:amd64 (1:3.0.9-1) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета libnetfilter-conntrack3:amd64.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/4-libnetfilter-conntrack3_1.0.9-3_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается libnetfilter-conntrack3:amd64 (1.0.9-3) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета auditd.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/01-auditd_1%3a3.0.9-1_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается auditd (1:3.0.9-1) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета iptables.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/5-iptables_1.8.9-2_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается iptables (1.8.9-2) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета audispd-plugins.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/02-audispd-plugins_1%3a3.0.9-1_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается audispd-plugins (1:3.0.9-1) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета netfilter-persistent.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/6-netfilter-persistent_1.0.20_all.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается netfilter-persistent (1.0.20) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета libip6tc2:amd64.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/03-libip6tc2_1.8.9-2_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет libip6tc2:amd64 (1.8.9-2) …[0m
+[0;32m    Debian12-WebServer: Распаковывается libip6tc2:amd64 (1.8.9-2) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет libnfnetlink0:amd64 (1.0.2-2) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет libnetfilter-conntrack3:amd64 (1.0.9-3) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет iptables (1.8.9-2) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета libnfnetlink0:amd64.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/04-libnfnetlink0_1.0.2-2_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается libnfnetlink0:amd64 (1.0.2-2) …[0m
+[0;32m    Debian12-LogServer: update-alternatives: используется /usr/sbin/iptables-legacy для предоставления /usr/sbin/iptables (iptables) в автоматическом режиме[0m
+[0;32m    Debian12-LogServer: update-alternatives: используется /usr/sbin/ip6tables-legacy для предоставления /usr/sbin/ip6tables (ip6tables) в автоматическом режиме[0m
+[0;32m    Debian12-LogServer: update-alternatives: используется /usr/sbin/iptables-nft для предоставления /usr/sbin/iptables (iptables) в автоматическом режиме[0m
+[0;32m    Debian12-LogServer: update-alternatives: используется /usr/sbin/ip6tables-nft для предоставления /usr/sbin/ip6tables (ip6tables) в автоматическом режиме[0m
+[0;32m    Debian12-LogServer: update-alternatives: используется /usr/sbin/arptables-nft для предоставления /usr/sbin/arptables (arptables) в автоматическом режиме[0m
+[0;32m    Debian12-LogServer: update-alternatives: используется /usr/sbin/ebtables-nft для предоставления /usr/sbin/ebtables (ebtables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета libnetfilter-conntrack3:amd64.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/05-libnetfilter-conntrack3_1.0.9-3_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается libnetfilter-conntrack3:amd64 (1.0.9-3) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета iptables-persistent.[0m
+[0;32m    Debian12-LogServer: (Чтение базы данных … (Чтение базы данных … 5%(Чтение базы данных … 10%(Чтение базы данных … 15%(Чтение базы данных … 20%(Чтение базы данных … 25%(Чтение базы данных … 30%(Чтение базы данных … 35%(Чтение базы данных … 40%(Чтение базы данных … 45%(Чтение базы данных … 50%(Чтение базы данных … 55%(Чтение базы данных … 60%(Чтение базы данных … 65%(Чтение базы данных … 70%(Чтение базы данных … 75%(Чтение базы данных … 80%(Чтение базы данных … 85%(Чтение базы данных … 90%(Чтение базы данных … 95%(Чтение базы данных … 100%(Чтение базы данных … на данный момент установлено 35133 файла и каталога.)[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/iptables-persistent_1.0.20_all.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается iptables-persistent (1.0.20) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета iptables.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/06-iptables_1.8.9-2_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается iptables (1.8.9-2) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета libestr0:amd64.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/libestr0_0.1.11-1_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается libestr0:amd64 (0.1.11-1) …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета libfastjson4:amd64.[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета libestr0:amd64.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/libfastjson4_1.2304.0-1_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/07-libestr0_0.1.11-1_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается libfastjson4:amd64 (1.2304.0-1) …[0m
+[0;32m    Debian12-WebServer: Распаковывается libestr0:amd64 (0.1.11-1) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета libfastjson4:amd64.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/08-libfastjson4_1.2304.0-1_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета liblognorm5:amd64.[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/liblognorm5_2.0.6-4_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается libfastjson4:amd64 (1.2304.0-1) …[0m
+[0;32m    Debian12-LogServer: Распаковывается liblognorm5:amd64 (2.0.6-4) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета liblognorm5:amd64.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/09-liblognorm5_2.0.6-4_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Выбор ранее не выбранного пакета rsyslog.[0m
+[0;32m    Debian12-WebServer: Распаковывается liblognorm5:amd64 (2.0.6-4) …[0m
+[0;32m    Debian12-LogServer: Подготовка к распаковке …/rsyslog_8.2302.0-1_amd64.deb …[0m
+[0;32m    Debian12-LogServer: Распаковывается rsyslog (8.2302.0-1) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета nginx-common.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/10-nginx-common_1.22.1-9_all.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается nginx-common (1.22.1-9) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет libestr0:amd64 (0.1.11-1) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета nginx.[0m
+[0;32m    Debian12-LogServer: Настраивается пакет libfastjson4:amd64 (1.2304.0-1) …[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/11-nginx_1.22.1-9_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается nginx (1.22.1-9) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет libauparse0:amd64 (1:3.0.9-1) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет liblognorm5:amd64 (2.0.6-4) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет netfilter-persistent (1.0.20) …[0m
+[0;32m    Debian12-WebServer: Выбор ранее не выбранного пакета rsyslog.[0m
+[0;32m    Debian12-WebServer: Подготовка к распаковке …/12-rsyslog_8.2302.0-1_amd64.deb …[0m
+[0;32m    Debian12-WebServer: Распаковывается rsyslog (8.2302.0-1) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет libip6tc2:amd64 (1.8.9-2) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет libestr0:amd64 (0.1.11-1) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет libfastjson4:amd64 (1.2304.0-1) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет nginx-common (1.22.1-9) …[0m
+[0;32m    Debian12-LogServer: Created symlink /etc/systemd/system/iptables.service → /lib/systemd/system/netfilter-persistent.service.[0m
+[0;32m    Debian12-LogServer: Created symlink /etc/systemd/system/ip6tables.service → /lib/systemd/system/netfilter-persistent.service.[0m
+[0;32m    Debian12-LogServer: Created symlink /etc/systemd/system/multi-user.target.wants/netfilter-persistent.service → /lib/systemd/system/netfilter-persistent.service.[0m
+[0;32m    Debian12-WebServer: Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.[0m
+[0;32m    Debian12-LogServer: Настраивается пакет auditd (1:3.0.9-1) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет libauparse0:amd64 (1:3.0.9-1) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет liblognorm5:amd64 (2.0.6-4) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет libnfnetlink0:amd64 (1.0.2-2) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет auditd (1:3.0.9-1) …[0m
+[0;32m    Debian12-LogServer: Created symlink /etc/systemd/system/multi-user.target.wants/auditd.service → /lib/systemd/system/auditd.service.[0m
+[0;32m    Debian12-WebServer: Created symlink /etc/systemd/system/multi-user.target.wants/auditd.service → /lib/systemd/system/auditd.service.[0m
+[0;32m    Debian12-LogServer: Настраивается пакет rsyslog (8.2302.0-1) …[0m
+[0;32m    Debian12-LogServer: Created symlink /etc/systemd/system/syslog.service → /lib/systemd/system/rsyslog.service.[0m
+[0;32m    Debian12-LogServer: Created symlink /etc/systemd/system/multi-user.target.wants/rsyslog.service → /lib/systemd/system/rsyslog.service.[0m
+[0;32m    Debian12-WebServer: Настраивается пакет nginx (1.22.1-9) …[0m
+[0;32m    Debian12-LogServer: Настраивается пакет iptables-persistent (1.0.20) …[0m
+[0;32m    Debian12-WebServer: Upgrading binary: nginx.[0m
+[0;32m    Debian12-WebServer: Настраивается пакет rsyslog (8.2302.0-1) …[0m
+[0;32m    Debian12-WebServer: Created symlink /etc/systemd/system/syslog.service → /lib/systemd/system/rsyslog.service.[0m
+[0;32m    Debian12-WebServer: Created symlink /etc/systemd/system/multi-user.target.wants/rsyslog.service → /lib/systemd/system/rsyslog.service.[0m
+[0;32m    Debian12-LogServer: Обрабатываются триггеры для man-db (2.11.2-2) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет libnetfilter-conntrack3:amd64 (1.0.9-3) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет audispd-plugins (1:3.0.9-1) …[0m
+[0;32m    Debian12-WebServer: Настраивается пакет iptables (1.8.9-2) …[0m
+[0;32m    Debian12-WebServer: update-alternatives: используется /usr/sbin/iptables-legacy для предоставления /usr/sbin/iptables (iptables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: update-alternatives: используется /usr/sbin/ip6tables-legacy для предоставления /usr/sbin/ip6tables (ip6tables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: update-alternatives: используется /usr/sbin/iptables-nft для предоставления /usr/sbin/iptables (iptables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: update-alternatives: используется /usr/sbin/ip6tables-nft для предоставления /usr/sbin/ip6tables (ip6tables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: update-alternatives: используется /usr/sbin/arptables-nft для предоставления /usr/sbin/arptables (arptables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: update-alternatives: используется /usr/sbin/ebtables-nft для предоставления /usr/sbin/ebtables (ebtables) в автоматическом режиме[0m
+[0;32m    Debian12-WebServer: Обрабатываются триггеры для man-db (2.11.2-2) …[0m
+[0;32m    Debian12-LogServer: Обрабатываются триггеры для libc-bin (2.36-9+deb12u8) …[0m
+[0;32m    Debian12-WebServer: Обрабатываются триггеры для libc-bin (2.36-9+deb12u8) …[0m
+[0;32m    Debian12-WebServer: No rules[0m
+[0;32m    Debian12-WebServer: enabled 1[0m
+[0;32m    Debian12-WebServer: failure 1[0m
+[0;32m    Debian12-WebServer: pid 1397[0m
+[0;32m    Debian12-WebServer: rate_limit 0[0m
+[0;32m    Debian12-WebServer: backlog_limit 8192[0m
+[0;32m    Debian12-WebServer: lost 0[0m
+[0;32m    Debian12-WebServer: backlog 4[0m
+[0;32m    Debian12-WebServer: backlog_wait_time 60000[0m
+[0;32m    Debian12-WebServer: backlog_wait_time_actual 0[0m
+[0;32m    Debian12-WebServer: enabled 1[0m
+[0;32m    Debian12-WebServer: failure 1[0m
+[0;32m    Debian12-WebServer: pid 1397[0m
+[0;32m    Debian12-WebServer: rate_limit 0[0m
+[0;32m    Debian12-WebServer: backlog_limit 8192[0m
+[0;32m    Debian12-WebServer: lost 0[0m
+[0;32m    Debian12-WebServer: backlog 4[0m
+[0;32m    Debian12-WebServer: backlog_wait_time 60000[0m
+[0;32m    Debian12-WebServer: backlog_wait_time_actual 0[0m
+[0;32m    Debian12-WebServer: enabled 1[0m
+[0;32m    Debian12-WebServer: failure 1[0m
+[0;32m    Debian12-WebServer: pid 1397[0m
+[0;32m    Debian12-WebServer: rate_limit 0[0m
+[0;32m    Debian12-WebServer: backlog_limit 8192[0m
+[0;32m    Debian12-WebServer: lost 0[0m
+[0;32m    Debian12-WebServer: backlog 9[0m
+[0;32m    Debian12-WebServer: backlog_wait_time 60000[0m
+[0;32m    Debian12-WebServer: backlog_wait_time_actual 0[0m
+[0;31m    Debian12-LogServer: run-parts: executing /usr/share/netfilter-persistent/plugins.d/15-ip4tables save[0m
+[0;31m    Debian12-LogServer: run-parts: executing /usr/share/netfilter-persistent/plugins.d/25-ip6tables save[0m
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> wget --spider http://192.168.121.11
+Включен режим робота. Проверка существования удалённого файла.
+--2024-11-19 13:49:24--  http://192.168.121.11/
+Подключение к 192.168.121.11:80... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 615 [text/html]
+Удалённый файл существует и может содержать дополнительные
+ссылки, но рекурсия отключена — не загружается.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> wget --spider http://192.168.121.11
+Включен режим робота. Проверка существования удалённого файла.
+--2024-11-19 13:49:27--  http://192.168.121.11/
+Подключение к 192.168.121.11:80... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 615 [text/html]
+Удалённый файл существует и может содержать дополнительные
+ссылки, но рекурсия отключена — не загружается.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> wget --spider http://192.168.121.11
+Включен режим робота. Проверка существования удалённого файла.
+--2024-11-19 13:49:28--  http://192.168.121.11/
+Подключение к 192.168.121.11:80... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 615 [text/html]
+Удалённый файл существует и может содержать дополнительные
+ссылки, но рекурсия отключена — не загружается.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> wget --spider http://192.168.121.11
+Включен режим робота. Проверка существования удалённого файла.
+--2024-11-19 13:49:29--  http://192.168.121.11/
+Подключение к 192.168.121.11:80... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 615 [text/html]
+Удалённый файл существует и может содержать дополнительные
+ссылки, но рекурсия отключена — не загружается.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> wget --spider http://192.168.121.11
+Включен режим робота. Проверка существования удалённого файла.
+--2024-11-19 13:49:29--  http://192.168.121.11/
+Подключение к 192.168.121.11:80... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 615 [text/html]
+Удалённый файл существует и может содержать дополнительные
+ссылки, но рекурсия отключена — не загружается.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> vagrant ssh Debian12-AppServer 
+Linux appserver 6.1.0-25-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.106-3 (2024-08-26) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Sep 30 11:45:32 2024
+[?2004h]0;vagrant@appserver: ~[01;32mvagrant@appserver[00m:[01;34m~[00m$ sudo -i
+[?2004l[?2004hroot@appserver:~# [?2004l
+выход
+[?2004h]0;vagrant@appserver: ~[01;32mvagrant@appserver[00m:[01;34m~[00m$ [?2004l
+выход
+Connection to 192.168.121.12 closed.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> vagrant ssh Debian12-AppServer [K[K[K[K[K[K[K[K[K[KWebServer 
+Linux webserver 6.1.0-25-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.106-3 (2024-08-26) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Sep 30 11:45:32 2024
+[?2004h]0;vagrant@webserver: ~[01;32mvagrant@webserver[00m:[01;34m~[00m$ sudo -i
+[?2004l[?2004hroot@webserver:~# echo '# TEST!' >> /etc/nginx/nginx.conf
+[?2004l[?2004hroot@webserver:~# [?2004l
+выход
+[?2004h]0;vagrant@webserver: ~[01;32mvagrant@webserver[00m:[01;34m~[00m$ [?2004l
+выход
+Connection to 192.168.121.11 closed.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> vagrant ssh Debian12-WebServer [K[K[K[K[K[K[K[K[K[KLogServer 
+[1;33m==> Debian12-LogServer: You assigned a static IP ending in ".1" to this machine.
+==> Debian12-LogServer: This is very often used by the router and can cause the
+==> Debian12-LogServer: network to not work properly. If the network doesn't work
+==> Debian12-LogServer: properly, try changing this IP.[0m
+Linux logserver 6.1.0-25-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.106-3 (2024-08-26) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Sep 30 11:45:32 2024
+[?2004h]0;vagrant@logserver: ~[01;32mvagrant@logserver[00m:[01;34m~[00m$ ls -l /var/log/appserver/
+[?2004lитого 28
+-rw-r----- 1 root adm  159 ноя 19 13:49  rsyslogd.log
+-rw-r----- 1 root adm  847 ноя 19 13:49  sshd.log
+-rw-r----- 1 root adm  329 ноя 19 13:49  sudo.log
+-rw-r----- 1 root adm  132 ноя 19 13:49 '(systemd).log'
+-rw-r----- 1 root adm 5823 ноя 19 13:49  systemd.log
+-rw-r----- 1 root adm  460 ноя 19 13:49  systemd-logind.log
+[?2004h]0;vagrant@logserver: ~[01;32mvagrant@logserver[00m:[01;34m~[00m$ ls -l /var/log/appserver/=[K[K[K[K[K[K[K[K[K[K[Kwebserver/
+[?2004lитого 12
+-rw-r----- 1 root adm 755 ноя 19 13:49 nginx_access.log
+-rw-r----- 1 root adm 397 ноя 19 13:50 sshd.log
+-rw-r----- 1 root adm 460 ноя 19 13:50 systemd-logind.log
+[?2004h]0;vagrant@logserver: ~[01;32mvagrant@logserver[00m:[01;34m~[00m$ sudo -i
+[?2004l[?2004hroot@logserver:~# ay[Kusearch -f /etc/nginx/nginx.conf
+[?2004l----
+time->Tue Nov 19 13:50:23 2024
+type=PROCTITLE msg=audit(1732013423.380:78): proctitle="-bash"
+type=PATH msg=audit(1732013423.380:78): item=1 name="/etc/nginx/nginx.conf" inode=787544 dev=fd:00 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1732013423.380:78): item=0 name="/etc/nginx/" inode=787535 dev=fd:00 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1732013423.380:78): cwd="/root"
+type=SYSCALL msg=audit(1732013423.380:78): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=5571d6339f60 a2=441 a3=1b6 items=2 ppid=1622 pid=1623 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=4 comm="bash" exe="/usr/bin/bash" subj=unconfined key=(null)
+[?2004hroot@logserver:~# [?2004l
+выход
+[?2004h]0;vagrant@logserver: ~[01;32mvagrant@logserver[00m:[01;34m~[00m$ [?2004l
+выход
+Connection to 192.168.121.10 closed.
+7]2;max@localhost.localdomain:~/vagrant/vg3]1;localhost.localdomain8max@localhost:~/vagrant/vg3> exit
+exit
+
+Script done on 2024-11-19 13:51:15+03:00 [COMMAND_EXIT_CODE="0"]
